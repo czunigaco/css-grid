@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
     Sans-Serif;
+  font-size: 100%;
   font-weight: normal;
   color: #272727;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
@@ -14,6 +15,7 @@ html {
 }
 
 body {
+  font-size: 100%;
   margin: 0;
 }
 
@@ -28,3 +30,118 @@ h6 {
   font-size: 1.5em;
 }
 
+p {
+  margin: 0;
+}
+
+.codepen {
+  color: #fff;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr 1fr auto;
+}
+
+.pen {
+  background: #1d7aa2;
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.button {
+  background: #6dc1b3;
+  border: 2px solid #6dc1b3;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.button:hover {
+  background: #54a89a;
+}
+
+.button--dirty {
+  background: #ff0850;
+  border-color: #ff0850;
+  color: #343446;
+}
+
+.button--dirty:hover {
+  background: #ec0044;
+}
+
+.button--small {
+  font-size: 0.75rem;
+  padding: 4px 7.5px;
+}
+
+.code {
+  background: #f3ffba;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 5px 5px 15px;
+}
+
+.editor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.editor__header {
+  align-items: center;
+  background: #004d5e;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 15px;
+  padding: 5px;
+}
+
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.editor__gutter {
+  background: #004d5e;
+}
+
+.editor__number {
+  display: block;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-bottom: 1.5px;
+  padding: 0 5px 0 15px;
+  text-align: right;
+}
+
+.editor__input {
+  background: #006778;
+  border: 0;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-family: monospace;
+  line-height: 1.25;
+  margin: 0;
+  resize: none;
+}
+
+.preview iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.settings {
+  background: #1d7aa2;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, min-content);
+  padding: 5px;
+}

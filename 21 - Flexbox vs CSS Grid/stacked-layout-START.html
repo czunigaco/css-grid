@@ -19,9 +19,13 @@
   </div>
 
   <style>
-    .stacked {}
+    .stacked {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-    .stacked>* {
+    .stacked > * {
       width: 30%;
       margin-bottom: 20px;
     }

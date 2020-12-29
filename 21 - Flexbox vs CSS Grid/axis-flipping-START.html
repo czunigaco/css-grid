@@ -31,10 +31,47 @@
     <div class="item">8</div>
     <div class="item">9</div>
     <div class="item">10</div>
-
   </div>
 
   <style>
+    /* Using Flex */
+    .flipper {
+      display: flex;
+    }
+
+    .flip {
+      flex-direction: column;
+    }
+
+    .item {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .item:last-child {
+      margin-right: 0;
+    }
+
+    /* Using Grid */
+    @supports (display: grid) {
+      .flipper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      }
+
+      .flip {
+        grid-template-columns: 1fr;
+
+        /* for two col layout */
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .item {
+        margin-right: 0;
+      }
+    }
+
   </style>
 </body>
 
